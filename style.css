@@ -1,0 +1,48 @@
+html,
+body {
+	height: 100%;
+	width: auto;
+}
+
+h1 {
+	font-family: sans-serif;
+}
+
+#container {
+	width: 520px;
+	height: 520px;
+	display: grid;
+}
+
+#container > div {
+	width: 100%;
+	height: 100%;
+	border: 1px black solid;
+}
+
+#title {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+#external-div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#size-btn {
+	color: #fff;
+	background-color: blue;
+	font-weight: bold;
+	border: 2px solid black;
+	border-radius: 12px;
+	height: 32px;
+	width: auto;
+}
+
+#size-btn:hover {
+	color: blue;
+	background-color: #fff;
+}
