@@ -1,6 +1,7 @@
 const container = document.getElementById('container');
 const sizeBtn = document.getElementById('size-btn');
 const randCol = () => Math.floor(Math.random() * 256);
+const letters = document.querySelectorAll('.letters');
 let mouseClick = false;
 
 sizeBtn.addEventListener('click', () => {
@@ -40,3 +41,7 @@ sizeBtn.addEventListener('click', () => {
 	}
 	container.style.gridTemplate = `repeat(${gridSide}, 1fr) / repeat(${gridSide}, 1fr)`;
 });
+
+for (let char of letters) {
+	char.style.color = `rgb(${randCol()}, ${randCol()}, ${randCol()})`;
+}
